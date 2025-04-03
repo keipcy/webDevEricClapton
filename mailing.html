@@ -16,31 +16,30 @@
             </div>
         </a>
         <nav class="navbar">
-            <a class="navbar-item" href="index.html"><i class="material-icons">home</i></a>
+            <a href="index.html"><i class="material-icons">home</i></a>
             <a href="info.html"><i class="material-icons">info</i></a>
-            <a href="discography.html"><i class="material-icons">music_note</i></a>
+            <a href="halloffame.html"><i class="material-icons">music_note</i></a>
             <a href="mailing.html"><i class="material-icons">mail</i></a>
         </nav>
     </header> 
     
     <div class="hero-image">
         <h1>Join our mailing list!</h1>
-        <form name="form" action="#" onsubmit="return validateForm()">
-            <label for="name">Name:</label>
+        <form action="#" onsubmit="return validateForm()">
+            <label>Name:</label>
+            <input type="text" id="username" placeholder="Please enter your full name">
             <br>
-            <input type="text" id="name" name="name">
-            <br>
+            <span id="username-error" class="error"></span>
             <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Please enter your email">
             <br>
-            <input type="text" id="email" name="email">
-            <br>
-            <span id="emailError" class="error"></span>
-            <br>
-            <input type="submit" value="Submit">
+            <span id="email-error" class="error"></span>
+            <input type="submit" class="submit-mail-button">
         </form>
     </div>
-
+    <script src="script.js"></script>
 </body>
+
 <footer>
     <div class="footer">
         <p>© 2025 Eric Clapton | Privacy & Cookie Policy</p>

@@ -98,7 +98,6 @@ body {
   background-color: transparent;
   cursor: pointer;
   font-size: 75%;
-  height: 44px;
   position: relative;
   text-align: center;
   text-transform: none;
@@ -169,27 +168,27 @@ body {
 }
 
 .triplet {
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     display: flex;
-    justify-content: space-around;
-    scale: 75%;
-    flex-direction: row;
     flex-wrap: wrap;
-    }
-
-.triplet figure {
-    display: flex;
-    width: 10%;
-    flex-direction: column;
-    justify-content: center;    
 }
 
 .triplet figure img {
     width: 15em;
 }
 
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+
 .error {
     color: red;
-    display: none !important;
+    font-size: 14px;
+    display: none;
 }
 
 footer {
