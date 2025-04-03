@@ -1,11 +1,5 @@
 // mailing list
 
-function validateForm() {
-    const isNameValid = validateName();
-    const isEmailValid = validateEmail();
-    return isEmailValid && isNameValid;
-}
-
 function validateName() {
     const nameInput = document.getElementById("username").value.trim();
     const nameError = document.getElementById("username-error");
@@ -15,6 +9,10 @@ function validateName() {
 
     if (nameInput === "") {
         nameError.textContent = "Name must be filled out";
+        nameError.style.display = "block"
+        return false;
+    }else if(nameInput.length < 6) {
+        nameError.textContent = "Name must be longer than 6 characters";
         nameError.style.display = "block"
         return false;
     }
@@ -40,9 +38,50 @@ function validateEmail() {
     return true;
 }
 
-// document.getElementById("submit-mail-button").addEventListener("click", (e) => {
-//     // post to mailing list
-// })
+document.getElementById("submit-mail-button").addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const isNameValid = validateName();
+    const isEmailValid = validateEmail();
+
+    if (!isNameValid || !isEmailValid) {
+        return;
+    }
+
+    let name = document.getElementById("username").value;
+    let email = document.getElementById("email").value;
+
+    const url = "https://mudfoot.doc.stu.mmu.ac.uk/ash/api/mailinglist"
+    const data = {
+        "name": name,
+        "email": email
+    }
+
+    fetch(url, {
+        method: "post",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    .then((response) => {
+        if(response.status === 200){
+            return response.json();
+        }else if(response.status === 400){
+            throw "Bad data was sent to the server"
+        }else{
+            throw "Something went wrong"
+        }
+    })
+    .then((resJson) => {
+        document.getElementById("formResponse").innerHTML = resJson["message"];
+        document.getElementById("formResponse").status = "success";
+    })
+    .catch((error) => {
+        document.getElementById("formResponse").innerHTML = error;
+        document.getElementById("formResponse").status = "error";
+    })
+})
 
 // hall of fame
 
@@ -94,3 +133,6 @@ document.getElementById("submit-button").addEventListener("click", (e) => {
         alert(error);
     });
 });
+
+// TODO: load 2021 data automatically
+// form response

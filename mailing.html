@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Mailing List</title>
 </head>
-<body>
+<body onload="getHallOfFame()">
     <header class="header">
         <a>
             <div>
@@ -25,7 +25,7 @@
     
     <div class="hero-image">
         <h1>Join our mailing list!</h1>
-        <form action="#" onsubmit="return validateForm()">
+        <form action="#">
             <label>Name:</label>
             <input type="text" id="username" placeholder="Please enter your full name">
             <br>
@@ -34,7 +34,9 @@
             <input type="text" id="email" placeholder="Please enter your email">
             <br>
             <span id="email-error" class="error"></span>
-            <input type="submit" class="submit-mail-button">
+            <input type="submit" id="submit-mail-button">
+
+            <p id="formResponse"></p>
         </form>
     </div>
     <script src="script.js"></script>
