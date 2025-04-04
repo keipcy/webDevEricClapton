@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -22,34 +23,35 @@
             <a href="mailing.html"><i class="material-icons">mail</i></a>
         </nav>
     </header> 
-
-    <div class="section">
+<div class="section">
+    <div>
         <form id="get-halloffame">
             <h1>Hall of Fame</h1>
-            <p>Eric Clapton has been inducted into the Rock and Roll Hall of Fame three times: once as a solo artist and separately as a member of the Yardbirds and of Cream.</p>
+            <p>Eric Clapton has been inducted into the Rock and Roll Hall of Fame three times: once as a solo artist in 2000 and separately as a member of the Yardbirds (1992) and of Cream (1993).</p>
             <label for="year">Year</label>
-            <input type="number" id="year" required>
+            <input type="number" id="year">
 
             <button id="submit-button">Submit</button>
         </form>
-    </div>
 
-    <div class="border-padding" id="halloffame-list">
-        <h3>Hall of Fame Inductions</h3>
-        <table>
-            <thead>
-                <tr>
-                    <td>Image</td>
-                    <td>Band</td>
-                    <td>Inducted Members</td>
-                </tr>
-            </thead>
-            <tbody id="halloffame-table-body">
-        </table>
+        <div class="w3-responsive">
+            <h3>Hall of Fame Inductions</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Image</td>
+                        <td>Band</td>
+                        <td>Inducted individuals</td>
+                    </tr>
+                </thead>
+                <tbody id="halloffame-table-body">
+            </table>
+        </div>
     </div>
-
+</div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 <footer>
     <div class="footer">
         <p>© 2025 Eric Clapton | Privacy & Cookie Policy</p>
