@@ -132,8 +132,23 @@ table {
     box-sizing: border-box;
 }
 
-ul, ol {
-    list-style: none; 
+ul {
+    list-style: none;
+}
+
+ol, ul {
+    padding: 1.5rem 1.5rem 1.5rem 4em;
+	columns: 25rem;
+	column-gap: 7rem;
+	border-radius: 0.5rem;
+}
+
+ol > * + * {
+	margin-top: 1rem;
+}
+
+ul > * + * {
+	margin-top: 1rem;
 }
 
 .contain {

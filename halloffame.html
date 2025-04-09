@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Hall of Fame</title>
-</head>
-<body>
-    <header class="header">
-        <a>
-            <div>
-                <img src="images/EricClaptonLogo.webp" alt="Eric Clapton Logo" onclick="window.location.href='index.html'">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>Hall of Fame</title>
+    </head>
+    
+    <body>
+        <header class="header">
+            <a>
+                <div>
+                    <img src="images/EricClaptonLogo.webp" alt="Eric Clapton Logo" onclick="window.location.href='index.html'">
+                </div>
+            </a>
+            <nav class="navbar">
+                <a href="index.html"><i class="material-icons">home</i></a>
+                <a href="info.html"><i class="material-icons">info</i></a>
+                <a href="halloffame.html"><i class="material-icons">music_note</i></a>
+                <a href="mailing.html"><i class="material-icons">mail</i></a>
+            </nav>
+        </header> 
+    <div class="section">
+        <div>
+            <form id="get-halloffame">
+                <h1>Hall of Fame</h1>
+                <p>Eric Clapton has been inducted into the Rock and Roll Hall of Fame three times: once as a solo artist in 2000 and separately as a member of the Yardbirds (1992) and of Cream (1993).</p>
+                <label for="year">Year</label>
+                <input type="number" id="year">
+
+                <button id="submit-button">Submit</button>
+            </form>
+
+            <div class="w3-responsive">
+                <h3>Hall of Fame Inductions</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Image</td>
+                            <td>Band</td>
+                            <td>Inducted individuals</td>
+                        </tr>
+                    </thead>
+                    <tbody id="halloffame-table-body">
+                </table>
             </div>
-        </a>
-        <nav class="navbar">
-            <a href="index.html"><i class="material-icons">home</i></a>
-            <a href="info.html"><i class="material-icons">info</i></a>
-            <a href="halloffame.html"><i class="material-icons">music_note</i></a>
-            <a href="mailing.html"><i class="material-icons">mail</i></a>
-        </nav>
-    </header> 
-<div class="section">
-    <div>
-        <form id="get-halloffame">
-            <h1>Hall of Fame</h1>
-            <p>Eric Clapton has been inducted into the Rock and Roll Hall of Fame three times: once as a solo artist in 2000 and separately as a member of the Yardbirds (1992) and of Cream (1993).</p>
-            <label for="year">Year</label>
-            <input type="number" id="year">
-
-            <button id="submit-button">Submit</button>
-        </form>
-
-        <div class="w3-responsive">
-            <h3>Hall of Fame Inductions</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <td>Image</td>
-                        <td>Band</td>
-                        <td>Inducted individuals</td>
-                    </tr>
-                </thead>
-                <tbody id="halloffame-table-body">
-            </table>
         </div>
     </div>
-</div>
-    <script src="script.js"></script>
-</body>
-
-<footer>
-    <div class="footer">
-        <p>© 2025 Eric Clapton | Privacy & Cookie Policy</p>
-        <p>Other sites:</p>
-        <a href="https://www.facebook.com/ericclapton/?locale=en_GB"><i class="fa fa-facebook"></i><a href="#"></a>
-        <a href="https://x.com/EricClapton?ref_src=twsrc%5Etfw"><i class="fa fa-twitter"></i><a href="#"></a>
-        <a href="https://www.instagram.com/ericclapton/?hl=en"><i class="fa fa-instagram"></i><a href="#"></a>
-        <a href="https://www.youtube.com/channel/UCtCOFqqGGGunX71nfZgPQOQ"><i class="fa fa-youtube"></i><a href="#"></a>
-    </div>
-</footer>
+        <footer>
+            <div class="footer">
+                <p>© 2025 Eric Clapton | Privacy & Cookie Policy</p>
+                <p>Other sites:</p>
+                <a href="https://www.facebook.com/ericclapton/?locale=en_GB"></a><i class="fa fa-facebook"></i>
+                <a href="https://x.com/EricClapton?ref_src=twsrc%5Etfw"></a><i class="fa fa-twitter"></i>
+                <a href="https://www.instagram.com/ericclapton/?hl=en"></a><i class="fa fa-instagram"></i>
+                <a href="https://www.youtube.com/channel/UCtCOFqqGGGunX71nfZgPQOQ"></a><i class="fa fa-youtube"></i>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>

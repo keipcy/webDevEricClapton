@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Mailing List</title>
-</head>
-<body>
-    <header class="header">
-        <a>
-            <div>
-                <img src="images/EricClaptonLogo.webp" alt="Eric Clapton Logo" onclick="window.location.href='index.html'">
-            </div>
-        </a>
-        <nav class="navbar">
-            <a href="index.html"><i class="material-icons">home</i></a>
-            <a href="info.html"><i class="material-icons">info</i></a>
-            <a href="halloffame.html"><i class="material-icons">music_note</i></a>
-            <a href="mailing.html"><i class="material-icons">mail</i></a>
-        </nav>
-    </header> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>Mailing List</title>
+    </head>
     
-    <div class="section">
-        <h1>Join our mailing list!</h1>
-        <form action="#">
-            <label>Name:</label>
-            <input type="text" id="username" placeholder="Please enter your full name">
-            <br>
-            <span id="username-error" class="error"></span>
-            <label for="email">Email:</label>
-            <input type="text" id="email" placeholder="Please enter your email">
-            <br>
-            <span id="email-error" class="error"></span>
-            <input type="submit" id="submit-mail-button">
+    <body>
+        <header class="header">
+            <a>
+                <div>
+                    <img src="images/EricClaptonLogo.webp" alt="Eric Clapton Logo" onclick="window.location.href='index.html'">
+                </div>
+            </a>
+            <nav class="navbar">
+                <a href="index.html"><i class="material-icons">home</i></a>
+                <a href="info.html"><i class="material-icons">info</i></a>
+                <a href="halloffame.html"><i class="material-icons">music_note</i></a>
+                <a href="mailing.html"><i class="material-icons">mail</i></a>
+            </nav>
+        </header> 
+        
+        <div class="section">
+            <h1>Join our mailing list!</h1>
+            <form action="#">
+                <label>Name:</label>
+                <input type="text" id="username" placeholder="Please enter your full name">
+                <br>
+                <span id="username-error" class="error"></span>
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Please enter your email">
+                <br>
+                <span id="email-error" class="error"></span>
+                <input type="submit" id="submit-mail-button">
 
-            <p id="formResponse"></p>
-        </form>
-    </div>
-    <script src="script.js"></script>
-</body>
+                <p id="formResponse"></p>
+            </form>
+        </div>
+        
+        <footer>
+            <div class="footer">
+                <p>© 2025 Eric Clapton | Privacy & Cookie Policy</p>
+                <p>Other sites:</p>
+                <a href="https://www.facebook.com/ericclapton/?locale=en_GB"></a><i class="fa fa-facebook"></i>
+                <a href="https://x.com/EricClapton?ref_src=twsrc%5Etfw"></a><i class="fa fa-twitter"></i>
+                <a href="https://www.instagram.com/ericclapton/?hl=en"></a><i class="fa fa-instagram"></i>
+                <a href="https://www.youtube.com/channel/UCtCOFqqGGGunX71nfZgPQOQ"></a><i class="fa fa-youtube"></i>
+            </div>
+        </footer>
 
-<footer>
-    <div class="footer">
-        <p>© 2025 Eric Clapton | Privacy & Cookie Policy</p>
-        <p>Other sites:</p>
-        <a href="https://www.facebook.com/ericclapton/?locale=en_GB"><i class="fa fa-facebook"></i><a href="#"></a>
-        <a href="https://x.com/EricClapton?ref_src=twsrc%5Etfw"><i class="fa fa-twitter"></i><a href="#"></a>
-        <a href="https://www.instagram.com/ericclapton/?hl=en"><i class="fa fa-instagram"></i><a href="#"></a>
-        <a href="https://www.youtube.com/channel/UCtCOFqqGGGunX71nfZgPQOQ"><i class="fa fa-youtube"></i><a href="#"></a>
-    </div>
-</footer>
+        <script src="script.js"></script>
+
+    </body>
 </html>
