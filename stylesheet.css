@@ -83,6 +83,7 @@ body {
 
 #discography {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/eric-clapton-fd32b02227e8402daa216eb901185076.jpg");
+    justify-content: center;
 }
 
 #info {
@@ -125,6 +126,33 @@ table {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none; 
+}
+
+.contain {
+    padding: 2px 16px;
+    width: 100%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
 }
 
 .border-padding {
@@ -177,6 +205,7 @@ table {
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
